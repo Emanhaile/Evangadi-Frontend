@@ -41,9 +41,6 @@ const Login = () => {
       {/* Login Form */}
       <div className="bg-white mb-5 shadow-md rounded-lg p-6 max-w-sm w-full mx-2  mt-12"> {/* Reduced mb-4 to mb-2 */}
         <h2 className="text-2xl font-semibold text-center mb-4">Login into your Account</h2>
-        <p className="text-center mb-6">
-          Don't have an account? <br /> <Link to='/signup' className='text-blue-500 hover:underline'>Create an account</Link>
-        </p>
         <form onSubmit={handleSubmit}>
           <div className='mb-4'>
             <input
@@ -68,7 +65,7 @@ const Login = () => {
           <button className='px-5 bg-[#ff8500] text-white py-2 rounded hover:bg-blue-700 transition duration-200'>
             Submit
           </button>
-          <p className="mt-4 text-center">
+          <p className="mt-4 text-center"> Don't have an account? <br />
             <Link to='/register' className='text-blue-500 hover:underline'>Create an account</Link>
           </p>
         </form>
